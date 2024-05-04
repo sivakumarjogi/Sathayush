@@ -9,9 +9,8 @@ class CustomContainerA extends StatelessWidget {
       body:Container(
         height: MediaQuery.of(context).size.height/2,
           width:MediaQuery.of(context).size.width,
-        color: Colors.lightGreenAccent,
         decoration: BoxDecoration(
-          border: Border.all(width:5,color: Colors.red),
+          border: Border.all(width:5,color: Colors.red),color: Colors.lightGreenAccent,
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
       ),
