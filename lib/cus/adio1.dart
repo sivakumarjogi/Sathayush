@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:untitled2/utills/common_strings.dart';
 import 'package:untitled2/utills/custom_appbar.dart';
 import 'package:untitled2/utills/custom_listview.dart';
 
@@ -25,7 +26,9 @@ class _Adio1State extends State<Adio1> {
           child: Column(
             children: [
               Text("page1"),
-              Expanded(child: CustomListView(itemColour: Colors.pink,borderColor: Colors.green,))
+              Expanded(child: CustomListView(
+                labelName: CommonStrings.itemCount,
+                itemColour: Colors.pink,borderColor: Colors.green,))
             ],
           ),
         ),

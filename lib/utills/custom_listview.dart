@@ -4,8 +4,9 @@ class CustomListView extends StatefulWidget {
   final Color itemColour;
   final int itemCount;
   final Color borderColor;
+  final String labelName;
 
-  CustomListView({super.key,required this.itemColour,this.itemCount = 10, this.borderColor = Colors.black});
+  CustomListView({super.key,required this.itemColour,this.itemCount = 10, this.borderColor = Colors.black, this.labelName ="Item Count"});
 
   @override
   State<CustomListView> createState() => _CustomListViewState();
@@ -27,7 +28,7 @@ class _CustomListViewState extends State<CustomListView> {
               border: Border.all(width: 5,color: widget.borderColor),
               color: widget.itemColour,
             ),
-            child: Center(child: Text("Item Count $index")),
+            child: Center(child: Text("${widget.labelName} $index")),
           ),
         );
       },
