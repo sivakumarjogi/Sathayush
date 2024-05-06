@@ -37,9 +37,9 @@ class _AdioState extends State<Adio> {
               Expanded(
                   child: CustomListView(
                 labelName: CommonStrings.itemCount,
-                itemColour: Colors.amber,
+                itemColour: Colors.purple,
                 itemCount: 5,
-                borderColor: Colors.cyan,
+                borderColor: Colors.green,
               ))
             ],
           ),
