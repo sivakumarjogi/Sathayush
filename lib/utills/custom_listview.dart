@@ -6,7 +6,7 @@ class CustomListView extends StatefulWidget {
   final Color borderColor;
   final String labelName;
 
-  CustomListView({super.key,required this.itemColour,this.itemCount = 10, this.borderColor = Colors.black, this.labelName ="Item Count"});
+  CustomListView({super.key,required this.itemColour,this.itemCount = 10, this.borderColor = Colors.black, this.labelName ="Item Count",});
 
   @override
   State<CustomListView> createState() => _CustomListViewState();
@@ -31,6 +31,8 @@ class _CustomListViewState extends State<CustomListView> {
             child: Center(child: Text("${widget.labelName} $index")),
           ),
         );
+
+
       },
     );
   }
